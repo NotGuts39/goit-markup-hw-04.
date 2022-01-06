@@ -157,20 +157,28 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-nav .link-nav:hover,
-.site-nav .link-nav:focus {
+.link-nav:hover,
+.link-nav:focus {
   color: var(--accent-color);
 }
 
 /* Banner */
 
 .banner {
-  background-color: var(--background-grey-color);
   letter-spacing: 0.06em;
-
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img\ back.jpg);
+
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-title {
@@ -302,6 +310,11 @@ img {
   background-color: var(--primary-white-color);
 }
 
+.li-shadow {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -351,6 +364,58 @@ img {
   margin-bottom: 30px;
 }
 
+/* присоединяйтесь */
+
+.foother-p {
+  font-style: normal;
+  color: var(--primary-white-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+.foother-div {
+  margin-left: 70px;
+}
+
+.foother-container {
+  display: flex;
+}
+
+.link-foother {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 206px;
+  height: 44px;
+}
+
+.link-foother li:first-child {
+  margin-left: 0px;
+}
+.link-foother li {
+  margin-left: 10px;
+}
+
+.link-decoration-foother {
+  color: var(--primary-white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-decoration-foother:hover {
+  background-color: var(--accent-color);
+}
+
 /* PORTFOLIO */
 
 /* Buttons */
@@ -359,6 +424,12 @@ img {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+}
+
+.buttons-shadow:hover,
+.buttons-shadow:focus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .buttons li {
@@ -418,6 +489,10 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+.gallery-shadow:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 
 .gallery li {
   margin-right: 30px;
@@ -449,5 +524,120 @@ img {
 .envelope {
   width: 16px;
   height: 12px;
-  stroke: var(--primary-text-color);
+  fill: currentColor;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.antenna,
+.clock,
+.diagram,
+.astronaut {
+  width: 70px;
+  height: 70px;
+}
+
+.svg-superioritys {
+  background-color: var(--background-button-color);
+  max-width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 25px 100px;
+}
+
+.team-svg {
+  display: inline-flex;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 206px;
+  height: 44px;
+  justify-content: space-between;
+}
+
+.team-svg li {
+  margin-left: 10px;
+}
+
+.team-link {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.link-decoration {
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.link-decoration:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.regular-customers {
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.regular-customers li {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-left: 30px;
+  color: #afb1b8;
+  text-align: center;
+  padding: 16px 32px;
+}
+
+.regular-customers :first-child {
+  margin-left: 0px;
+}
+
+.regular-customers li:hover {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.union {
+  width: 41px;
+  height: 47px;
+  fill: currentColor;
+}
+.company {
+  width: 40px;
+  height: 52px;
+  fill: currentColor;
+}
+.object {
+  width: 43px;
+  height: 41px;
+  fill: currentColor;
+}
+.foster {
+  width: 84px;
+  height: 41px;
+  fill: currentColor;
+}
+.brand {
+  width: 63px;
+  height: 45px;
+  fill: currentColor;
+}
+.tag {
+  width: 94px;
+  height: 44px;
+  fill: currentColor;
 }

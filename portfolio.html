@@ -31,8 +31,22 @@
         </nav>
 
         <ul class="site-nav list secondary-link">
-          <li><a href="mailto:info@devstudio.com" class="link-nav">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link-nav">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link-nav">
+              <svg class="envelope envelope-div">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link-nav">
+              <svg class="smartphone envelope-div">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -43,15 +57,25 @@
         <!-- <h1>Проекты</h1> -->
         <div class="container">
           <ul class="list buttons">
-            <li><button type="button" class="button-projects">Все</button></li>
-            <li><button type="button" class="button-projects">Веб-сайты</button></li>
-            <li><button type="button" class="button-projects">Приложения</button></li>
-            <li><button type="button" class="button-projects">Дизайн</button></li>
-            <li><button type="button" class="button-projects">Маркетинг</button></li>
+            <li class="buttons-shadow">
+              <button type="button" class="button-projects">Все</button>
+            </li>
+            <li class="buttons-shadow">
+              <button type="button" class="button-projects">Веб-сайты</button>
+            </li>
+            <li class="buttons-shadow">
+              <button type="button" class="button-projects">Приложения</button>
+            </li>
+            <li class="buttons-shadow">
+              <button type="button" class="button-projects">Дизайн</button>
+            </li>
+            <li class="buttons-shadow">
+              <button type="button" class="button-projects">Маркетинг</button>
+            </li>
           </ul>
 
           <ul class="list gallery">
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img21.jpg" alt="Веб-сайт" width="370" />
                 <div class="gallery-border">
@@ -60,7 +84,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img22.jpg" alt="Баскетбольный постер" width="370" />
                 <div class="gallery-border">
@@ -69,7 +93,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img23.jpg" alt="Логотип ресторана" width="370" />
                 <div class="gallery-border">
@@ -78,7 +102,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img24.jpg" alt="Наушники" width="370" />
                 <div class="gallery-border">
@@ -87,7 +111,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img25.jpg" alt="Коробки" width="370" />
                 <div class="gallery-border">
@@ -96,7 +120,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img26.jpg" alt="Монитор" width="370" />
                 <div class="gallery-border">
@@ -105,7 +129,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img27.jpg" alt="Журнал" width="370" />
                 <div class="gallery-border">
@@ -114,7 +138,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img28.jpg" alt="Лейбл" width="370" />
                 <div class="gallery-border">
@@ -123,7 +147,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery-shadow">
               <a class="anchor-decoretion" href="">
                 <img src="./images/img29.jpg" alt="Ноутбук" width="370" />
                 <div class="gallery-border">
@@ -139,20 +163,61 @@
 
     <!--Address-->
     <footer class="foother">
-      <div class="container">
-        <a href="" class="logo address-logo">Web<span class="logo-footer">Studio</span></a>
+      <div class="container foother-container">
+        <div class="">
+          <a href="" class="logo address-logo">Web<span class="logo-footer">Studio</span></a>
 
-        <address class="address">
-          <ul class="list">
-            <li><a href="" class="address-city">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li class="feedback">
-              <a href="mailto:info@example.com" class="address-nav">info@example.com</a>
+          <address class="address">
+            <ul class="list">
+              <li>
+                <a href="" class="address-city">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="feedback">
+                <a href="mailto:info@example.com" class="address-nav">info@example.com</a>
+              </li>
+              <li class="feedback">
+                <a href="tel:+380991111111" class="address-nav">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Присоединяйтесь -->
+
+        <div class="foother-div">
+          <h2 class="foother-p">Присоединяйтесь</h2>
+
+          <ul class="list link-foother">
+            <li>
+              <a href="" class="link-decoration-foother">
+                <svg class="team-link">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="feedback">
-              <a href="tel:+380991111111" class="address-nav">+38 099 111 11 11</a>
+            <li>
+              <a href="" class="link-decoration-foother">
+                <svg class="team-link">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link-decoration-foother">
+                <svg class="team-link">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link-decoration-foother">
+                <svg class="team-link">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
